@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AltBinder — Confidentialité & Conditions</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text-primary: #0B0B0C;
+    --text-muted: #6B6B70;
+    --border: rgba(0,0,0,0.08);
+    --bg-card: #F5F5F7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 24px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+  }
+  .logo {
+    width: 36px; height: 36px;
+    background: var(--text-primary);
+    border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .logo svg { width: 22px; height: 22px; }
+  .header-name { font-size: 17px; font-weight: 800; letter-spacing: -0.3px; }
+
+  .tabs {
+    display: flex;
+    gap: 8px;
+    padding: 16px 24px 0;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .tab {
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-muted);
+    background: transparent;
+    border: none;
+  }
+  .tab.active { background: var(--text-primary); color: #fff; }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px 80px;
+  }
+  .doc { display: none; }
+  .doc.active { display: block; }
+
+  h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 4px; }
+  .updated { font-size: 13px; color: var(--text-muted); margin-bottom: 32px; }
+  h2 { font-size: 18px; font-weight: 700; margin-top: 32px; margin-bottom: 12px; }
+  p, li { font-size: 15px; color: #2b2b2e; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .callout {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 16px 18px;
+    font-size: 14px;
+    margin: 16px 0;
+  }
+  a { color: var(--text-primary); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <path d="M280 880 L512 200" stroke="white" stroke-width="72" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <line x1="362" y1="648" x2="512" y2="648" stroke="white" stroke-width="56" stroke-linecap="round"/>
+      <line x1="512" y1="200" x2="512" y2="880" stroke="white" stroke-width="72" stroke-linecap="round"/>
+      <path d="M512 200 Q736 200 736 352 Q736 504 512 504" stroke="white" stroke-width="64" stroke-linecap="round" fill="none"/>
+      <path d="M512 504 Q760 504 760 692 Q760 880 512 880" stroke="white" stroke-width="64" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+  <div class="header-name">AltBinder</div>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showDoc('privacy')">Confidentialité</button>
+  <button class="tab" onclick="showDoc('terms')">Conditions d'utilisation</button>
+</div>
+
+<main>
+
+  <!-- ───────────── POLITIQUE DE CONFIDENTIALITÉ ───────────── -->
+  <section id="privacy" class="doc active">
+    <h1>Politique de confidentialité</h1>
+    <div class="updated">Dernière mise à jour : 23 août 2026</div>
+
+    <p>AltBinder est une application de suivi de collection de cartes à jouer (TCG). Cette page explique quelles données nous traitons, pourquoi, et comment les contrôler.</p>
+
+    <div class="callout">
+      <strong>Responsable du traitement :</strong> Samy Vernizeau (à ce jour, exploitant individuel — cette mention sera mise à jour dès la création de la société).<br/>
+      <strong>Contact :</strong> <a href="mailto:privacy@altbinder.app">privacy@altbinder.app</a>
+    </div>
+
+    <h2>Données que nous collectons</h2>
+    <ul>
+      <li><strong>Compte :</strong> adresse email et mot de passe (chiffré, jamais stocké en clair) pour créer et sécuriser ton compte. Si tu utilises "Se connecter avec Apple", nous recevons le nom et l'email transmis par Apple.</li>
+      <li><strong>Collection :</strong> les cartes que tu ajoutes, leur quantité, état, et le prix d'achat que tu renseignes (avec sa devise).</li>
+      <li><strong>Signalements :</strong> les problèmes que tu nous remontes via le bouton de signalement, liés à ton compte pour qu'on puisse te répondre.</li>
+    </ul>
+    <p>Nous ne collectons aucune donnée de paiement directement — l'app ne propose actuellement aucun achat intégré.</p>
+
+    <h2>Pourquoi nous les utilisons</h2>
+    <p>Uniquement pour faire fonctionner le service : sauvegarder ta collection, calculer sa valeur, te permettre de la retrouver sur tous tes appareils, et corriger les problèmes que tu signales. Nous n'utilisons pas tes données à des fins publicitaires ou marketing.</p>
+
+    <h2>Le partage de binder — un point important</h2>
+    <p>AltBinder propose une fonctionnalité optionnelle de partage de ta collection via un lien public. <strong>Elle est désactivée par défaut.</strong> Si tu l'actives toi-même :</p>
+    <ul>
+      <li>Les cartes, leur état et leur valeur de marché deviennent visibles par toute personne ayant le lien</li>
+      <li>Ton prix d'achat personnel n'est <strong>jamais</strong> inclus dans ce lien, quelle que soit la configuration</li>
+      <li>Tu peux désactiver le partage ou régénérer un nouveau lien à tout moment, ce qui invalide immédiatement l'ancien</li>
+    </ul>
+
+    <h2>Qui reçoit tes données</h2>
+    <p>Nous faisons appel aux prestataires suivants pour faire fonctionner AltBinder :</p>
+    <ul>
+      <li><strong>Supabase</strong> — hébergement de la base de données, de l'authentification et du stockage des images</li>
+      <li><strong>Apple</strong> — uniquement si tu utilises "Se connecter avec Apple"</li>
+    </ul>
+    <p>Pour afficher les prix de marché, nous interrogeons des services tiers (Cardmarket et équivalents) à partir du code de la carte — <strong>aucune donnée te concernant n'est jamais transmise</strong> à ces services, la recherche se fait uniquement par référence de carte.</p>
+
+    <h2>Conservation des données</h2>
+    <p>Tes données sont conservées tant que ton compte est actif. Tu peux demander la suppression complète de ton compte et de tes données à tout moment en nous contactant.</p>
+
+    <h2>Tes droits</h2>
+    <p>Conformément au RGPD, tu disposes d'un droit d'accès, de rectification, d'effacement, de portabilité et d'opposition sur tes données. Pour exercer ces droits, contacte-nous à l'adresse ci-dessus. Tu disposes également du droit d'introduire une réclamation auprès de la CNIL.</p>
+
+    <h2>Cookies et suivi</h2>
+    <p>L'application ne contient aucun outil de suivi publicitaire ni d'analyse comportementale tiers.</p>
+
+    <h2>Modifications</h2>
+    <p>Cette politique peut évoluer avec l'app. Toute modification significative te sera signalée dans l'application.</p>
+  </section>
+
+  <!-- ───────────── CONDITIONS D'UTILISATION ───────────── -->
+  <section id="terms" class="doc">
+    <h1>Conditions d'utilisation</h1>
+    <div class="updated">Dernière mise à jour : 23 août 2026</div>
+
+    <p>En utilisant AltBinder, tu acceptes les conditions décrites ci-dessous. Merci de les lire.</p>
+
+    <h2>Le service</h2>
+    <p>AltBinder te permet de répertorier ta collection de cartes à jouer, suivre sa valeur estimée, et la partager si tu le souhaites. Le service évolue régulièrement — de nouvelles fonctionnalités peuvent être ajoutées ou modifiées.</p>
+
+    <h2>Ton compte</h2>
+    <p>Tu es responsable de la confidentialité de tes identifiants et de toute activité effectuée depuis ton compte. Préviens-nous rapidement si tu soupçonnes un accès non autorisé.</p>
+
+    <h2>Les prix affichés — un point essentiel</h2>
+    <div class="callout">
+      Les prix de marché affichés dans AltBinder proviennent de sources tierces (places de marché spécialisées) et sont fournis à titre indicatif uniquement. Ils peuvent être inexacts, absents, ou obsolètes selon les cartes. <strong>AltBinder ne garantit pas l'exactitude des prix affichés et ne constitue en aucun cas un conseil financier ou d'investissement.</strong> Toute décision d'achat ou de vente basée sur ces informations relève de ta seule responsabilité.
+    </div>
+
+    <h2>Utilisation acceptable</h2>
+    <p>Tu t'engages à ne pas :</p>
+    <ul>
+      <li>Utiliser le service à des fins illégales</li>
+      <li>Tenter de perturber le fonctionnement de l'application ou de ses serveurs</li>
+      <li>Utiliser la fonctionnalité de partage pour diffuser du contenu trompeur ou nuisible</li>
+    </ul>
+
+    <h2>Contenu que tu ajoutes</h2>
+    <p>Les données de ta collection t'appartiennent. En les ajoutant à AltBinder, tu nous autorises à les stocker et les traiter uniquement pour te fournir le service — y compris pour les afficher publiquement si tu actives toi-même le partage de binder.</p>
+
+    <h2>Résiliation</h2>
+    <p>Tu peux supprimer ton compte à tout moment. Nous nous réservons le droit de suspendre un compte en cas d'utilisation contraire à ces conditions.</p>
+
+    <h2>Limitation de responsabilité</h2>
+    <p>AltBinder est fourni "en l'état". Nous mettons tout en œuvre pour assurer la fiabilité du service, sans garantir une disponibilité ininterrompue ni l'absence totale d'erreurs, notamment concernant les prix affichés.</p>
+
+    <h2>Droit applicable</h2>
+    <p>Ces conditions sont régies par le droit français.</p>
+
+    <h2>Contact</h2>
+    <p>Pour toute question : <a href="mailto:contact@altbinder.app">contact@altbinder.app</a></p>
+  </section>
+
+</main>
+
+<script>
+  function showDoc(id) {
+    document.querySelectorAll('.doc').forEach(d => d.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+    window.scrollTo(0, 0);
+  }
+</script>
+
+</body>
+</html>
