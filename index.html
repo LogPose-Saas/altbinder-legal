@@ -108,12 +108,12 @@
   <!-- ───────────── POLITIQUE DE CONFIDENTIALITÉ ───────────── -->
   <section id="privacy" class="doc active">
     <h1>Politique de confidentialité</h1>
-    <div class="updated">Dernière mise à jour : 23 août 2026</div>
+    <div class="updated">Dernière mise à jour : 23 octobre 2026</div>
 
     <p>AltBinder est une application de suivi de collection de cartes à jouer (TCG). Cette page explique quelles données nous traitons, pourquoi, et comment les contrôler.</p>
 
     <div class="callout">
-      <strong>Responsable du traitement :</strong> Samy Vernizeau (à ce jour, exploitant individuel — cette mention sera mise à jour dès la création de la société).<br/>
+      <strong>Responsable du traitement :</strong> Samy Vernizeau, entrepreneur individuel (SIREN 979 386 935).<br/>
       <strong>Contact :</strong> <a href="mailto:privacy@altbinder.app">privacy@altbinder.app</a>
     </div>
 
@@ -122,8 +122,9 @@
       <li><strong>Compte :</strong> adresse email et mot de passe (chiffré, jamais stocké en clair) pour créer et sécuriser ton compte. Si tu utilises "Se connecter avec Apple", nous recevons le nom et l'email transmis par Apple.</li>
       <li><strong>Collection :</strong> les cartes que tu ajoutes, leur quantité, état, et le prix d'achat que tu renseignes (avec sa devise).</li>
       <li><strong>Signalements :</strong> les problèmes que tu nous remontes via le bouton de signalement, liés à ton compte pour qu'on puisse te répondre.</li>
+      <li><strong>Achats AltBinder Pro :</strong> l'état de tes achats (formule, dates d'achat, de renouvellement et d'expiration), rattaché à l'identifiant de ton compte AltBinder, pour activer ou retirer ton accès Pro.</li>
     </ul>
-    <p>Nous ne collectons aucune donnée de paiement directement — l'app ne propose actuellement aucun achat intégré.</p>
+    <p>Les paiements sont entièrement traités par Apple : nous ne recevons et ne stockons <strong>jamais</strong> tes données bancaires.</p>
 
     <h2>Pourquoi nous les utilisons</h2>
     <p>Uniquement pour faire fonctionner le service : sauvegarder ta collection, calculer sa valeur, te permettre de la retrouver sur tous tes appareils, et corriger les problèmes que tu signales. Nous n'utilisons pas tes données à des fins publicitaires ou marketing.</p>
@@ -140,12 +141,13 @@
     <p>Nous faisons appel aux prestataires suivants pour faire fonctionner AltBinder :</p>
     <ul>
       <li><strong>Supabase</strong> — hébergement de la base de données, de l'authentification et du stockage des images</li>
-      <li><strong>Apple</strong> — uniquement si tu utilises "Se connecter avec Apple"</li>
+      <li><strong>Apple</strong> — si tu utilises "Se connecter avec Apple", et pour le paiement des achats intégrés</li>
+      <li><strong>RevenueCat</strong> (RevenueCat, Inc., États-Unis) — gestion des achats intégrés : reçoit l'identifiant de ton compte AltBinder et l'état de tes achats, jamais tes données bancaires</li>
     </ul>
-    <p>Pour afficher les prix de marché, nous interrogeons des services tiers (Cardmarket et équivalents) à partir du code de la carte — <strong>aucune donnée te concernant n'est jamais transmise</strong> à ces services, la recherche se fait uniquement par référence de carte.</p>
+    <p>Les prix de marché sont établis à partir de données publiées par des places de marché spécialisées (notamment Cardmarket), récupérées par référence de carte — <strong>aucune donnée te concernant n'est jamais transmise</strong> à ces services.</p>
 
     <h2>Conservation des données</h2>
-    <p>Tes données sont conservées tant que ton compte est actif. Tu peux demander la suppression complète de ton compte et de tes données à tout moment en nous contactant.</p>
+    <p>Tes données sont conservées tant que ton compte est actif. Tu peux supprimer ton compte et tes données à tout moment directement dans l'app (onglet Portfolio → « Supprimer mon compte ») ou en nous contactant. Les justificatifs d'achat restent conservés par Apple selon ses propres règles.</p>
 
     <h2>Tes droits</h2>
     <p>Conformément au RGPD, tu disposes d'un droit d'accès, de rectification, d'effacement, de portabilité et d'opposition sur tes données. Pour exercer ces droits, contacte-nous à l'adresse ci-dessus. Tu disposes également du droit d'introduire une réclamation auprès de la CNIL.</p>
@@ -160,7 +162,7 @@
   <!-- ───────────── CONDITIONS D'UTILISATION ───────────── -->
   <section id="terms" class="doc">
     <h1>Conditions d'utilisation</h1>
-    <div class="updated">Dernière mise à jour : 23 août 2026</div>
+    <div class="updated">Dernière mise à jour : 23 octobre 2026</div>
 
     <p>En utilisant AltBinder, tu acceptes les conditions décrites ci-dessous. Merci de les lire.</p>
 
@@ -174,6 +176,24 @@
     <div class="callout">
       Les prix de marché affichés dans AltBinder proviennent de sources tierces (places de marché spécialisées) et sont fournis à titre indicatif uniquement. Ils peuvent être inexacts, absents, ou obsolètes selon les cartes. <strong>AltBinder ne garantit pas l'exactitude des prix affichés et ne constitue en aucun cas un conseil financier ou d'investissement.</strong> Toute décision d'achat ou de vente basée sur ces informations relève de ta seule responsabilité.
     </div>
+
+    <h2>AltBinder Pro — achats intégrés</h2>
+    <p>AltBinder est gratuit. L'offre <strong>AltBinder Pro</strong> donne accès à des fonctionnalités supplémentaires (notamment l'historique de prix des cartes et l'évolution de la valeur du binder). Elle est proposée sous deux formes :</p>
+    <ul>
+      <li><strong>Abonnement mensuel</strong> à renouvellement automatique</li>
+      <li><strong>Achat unique « à vie »</strong> : accès à AltBinder Pro sans limite de durée, tant que le service est exploité, sans renouvellement</li>
+    </ul>
+    <p>Le prix, toutes taxes comprises, est affiché dans l'app avant tout achat. Le paiement est débité sur ton compte Apple à la confirmation de l'achat.</p>
+    <div class="callout">
+      <strong>Renouvellement et résiliation de l'abonnement :</strong> l'abonnement se renouvelle automatiquement pour la même durée et au même prix, sauf résiliation au moins 24 heures avant la fin de la période en cours. Le renouvellement est facturé dans les 24 heures précédant la fin de la période. Tu peux gérer ou résilier ton abonnement à tout moment dans les réglages de ton compte App Store (Réglages → ton nom → Abonnements) ; la résiliation prend effet à la fin de la période déjà payée.
+    </div>
+    <ul>
+      <li><strong>Suppression du compte :</strong> supprimer ton compte AltBinder n'annule pas un abonnement en cours — pense à le résilier depuis ton compte Apple.</li>
+      <li><strong>Remboursements :</strong> les paiements étant traités par Apple, les demandes de remboursement (y compris au titre du droit de rétractation lorsqu'il s'applique) sont gérées par Apple via <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+      <li><strong>Restauration :</strong> le bouton « Restaurer mes achats » de l'écran AltBinder Pro rétablit ton accès sur un nouvel appareil, avec le même compte Apple.</li>
+      <li>Les fonctionnalités Pro peuvent évoluer ; toute modification de prix de l'abonnement te sera notifiée par Apple conformément à ses règles.</li>
+    </ul>
+    <p>L'utilisation de l'app est également soumise au <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">contrat de licence utilisateur final standard d'Apple</a>.</p>
 
     <h2>Utilisation acceptable</h2>
     <p>Tu t'engages à ne pas :</p>
